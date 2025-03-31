@@ -1,0 +1,79 @@
+.subscription-container {
+  margin: 20px 0px 5px 0px;
+}
+
+.subs-option {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px 0px;
+
+  &__btn {
+    color: white;
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 100px;
+    padding: 12px 30px;
+    backdrop-filter: blur(10.873px);
+    background-color: #FFFFFF1A;
+    position: relative;
+    transition: border-color 0.3s ease-in-out;
+  }
+
+  &__btn--active {
+    border-color: white;
+    background: #FFFFFF4D;
+
+  }
+
+  &__btn-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__btn-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__btn-next {
+    background-color: white;
+    border-radius: 100px;
+    padding: 15px;
+
+    a {
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 590;
+      line-height: 24px;
+      color: black;
+    }
+  }
+}
+.subscription__badge {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background: linear-gradient(90deg, #7b61ff, #007bff);
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.subs-option__btn--active .subscription__badge {
+  background-color: white; 
+  background-image: none; 
+  color: black;
+}
+
+

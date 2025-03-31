@@ -1,0 +1,22 @@
+{
+    "en": {
+        "currency": "$",
+        "yearly": {
+            "total": "39.99",
+            "weekly": "0.48"
+        },
+        "monthly": {
+            "total": "6.99"
+        }
+    },
+    "fr": {
+        "currency": "€",
+        "yearly": {
+            "total": "35.99",
+            "weekly": "0.45"
+        },
+        "monthly": {
+            "total": "5.99"
+        }
+    }
+}

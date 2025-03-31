@@ -1,0 +1,13 @@
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    opacity: 0.3;
+    justify-content: center;
+    margin: 15px 0px;
+
+    a {
+        color: #FFFFFF;
+        font-size: 13px;
+    }
+}
