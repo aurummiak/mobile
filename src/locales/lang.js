@@ -5,6 +5,13 @@ import fr from "./fr.json";
 import de from "./de.json";
 import ja from "./ja.json";
 
+const urlParams = new URLSearchParams(window.location.search);
+const lang = urlParams.get('lang');
+
+if (lang) {
+    document.documentElement.setAttribute('lang', lang);
+}
+
 const supportedLanguages = ["en", "pt", "es", "fr", "de", "ja"];
 const defaultLanguage = "en";
 

@@ -1,0 +1,37 @@
+html[lang="es"] .card-container__card-text {
+    width: 90%;
+}
+
+html[lang="fr"] .card-container__card-text {
+    width: 90%;
+}
+
+html[lang="fr"] h2 {
+    font-size: 14px;
+}
+
+html[lang="fr"] h4 {
+    font-size: 14px;
+}
+
+html[lang="fr"] .footer-links {
+    justify-content: space-between;
+    gap: 5px;
+}
+
+html[lang="fr"] .footer-links a {
+    font-size: 12px;
+}
+
+
+html[lang="de"] h2 {
+    font-size: 14px;
+}
+
+html[lang="de"] .footer-links a {
+    font-size: 11px;
+}
+
+html[lang="de"] .card-container__card-text {
+    font-size: 10px;
+}

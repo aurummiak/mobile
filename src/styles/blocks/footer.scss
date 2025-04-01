@@ -5,9 +5,10 @@
     opacity: 0.3;
     justify-content: center;
     margin: 15px 0px;
+    align-items: center;
 
     a {
         color: #FFFFFF;
-        font-size: 13px;
+        font-size: var(--font-size-footer);
     }
 }

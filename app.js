@@ -1,5 +1,4 @@
-import "./src/locales/index.js";
-import "./src/locales/prices.js";
+import "./src/locales/lang.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".subs-option__btn");
@@ -11,3 +10,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const options = document.querySelectorAll(".subs-option__btn");
+  const continueBtn = document.getElementById("continue-btn");
+
+  let selectedUrl = document.querySelector(".subs-option__btn--active")?.dataset.url;
+  continueBtn.setAttribute("href", selectedUrl);
+
+  options.forEach(option => {
+    option.addEventListener("click", function () {
+      options.forEach(opt => opt.classList.remove("subs-option__btn--active"));
+      this.classList.add("subs-option__btn--active");
+
+      selectedUrl = this.dataset.url;
+      continueBtn.setAttribute("href", selectedUrl);
+    });
+  });
+});
+
+

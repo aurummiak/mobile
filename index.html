@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mobile banner</title>
   <link rel="stylesheet" href="./src/styles/main.scss">
+  <link rel="icon" href="./src/assets/icons/fav.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -41,34 +42,32 @@
 
     <div class="subscription-container">
       <div class="subs-option">
-
-        <div class="subs-option__btn subs-option__btn--active">
+        <div class="subs-option__btn subs-option__btn--active" data-url="https://apple.com">
           <span class="subscription__badge" id="notify-offer">BEST OFFER</span>
           <div class="subs-option__btn-left">
             <h2 id="yearly-title">YEARLY ACCESS</h2>
-            <h3 id="yearly-desc">Just {{price}} per year</h3>
+            <h4 id="yearly-desc">Just {{price}} per year</h4>
           </div>
-
           <div class="subs-option__btn-right">
             <h4 class="price">{{price}} <br>per week</h4>
           </div>
         </div>
-
-        <div class="subs-option__btn">
+    
+        <div class="subs-option__btn" data-url="https://google.com">
           <div class="subs-option__btn-left">
             <h2 id="weekly-title">WEEKLY ACCESS</h2>
           </div>
-
           <div class="subs-option__btn-right">
             <h4 class="price">{{price}} <br>per week</h4>
           </div>
         </div>
       </div>
-
+    
       <div class="subs-option__btn-next">
         <a href="#" id="continue-btn">Continue</a>
       </div>
     </div>
+    
 
 
 
